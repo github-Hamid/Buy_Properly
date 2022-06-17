@@ -1,0 +1,12 @@
+<div [ngSwitch]="type">
+<div class="container" *ngSwitchCase="'animal'">
+<app-animal-card *ngFor="let item of animals" [animalItem]="item" [type]="type"
+ (cardHoverFinished)="handleHoverFinished()" (cardOnHover)="handleHovered($event)">
+</app-animal-card>
+</div>
+<div class="container" *ngSwitchCase="'fruit_veg'">
+  <app-animal-card *ngFor="let item of fruits_vegs" [fruit_vegItem]="item" [type]="type"
+   (cardHoverFinished)="handleHoverFinished()" (cardOnHover)="handleHovered($event)">
+  </app-animal-card>
+  </div>
+</div>

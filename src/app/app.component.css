@@ -1,0 +1,9 @@
+.app-container{
+  width: 100%;
+
+}
+
+.app-container__items{
+  width: 90%;
+  margin: auto;
+}
