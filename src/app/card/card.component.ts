@@ -1,11 +1,11 @@
-import { Fruit_Veg } from './../fruit&veg';
+import { Fruit_Veg } from '../fruit&veg';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Animal } from '../animal';
 import { SendMessageService } from '../send-message.service';
 @Component({
-  selector: 'app-animal-card',
-  templateUrl: './animal-card.component.html',
-  styleUrls: ['./animal-card.component.css']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css']
 })
 export class AnimalCardComponent implements OnInit {
 

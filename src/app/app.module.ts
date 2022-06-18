@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import {HttpClientModule} from "@angular/common/http";
-import { AnimalCardComponent } from './animal-card/animal-card.component';
+import { AnimalCardComponent } from './card/card.component';
 
 
 
