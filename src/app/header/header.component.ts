@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
  //sending event to parent when button is clicked
  @Output() buttonCilcked = new EventEmitter();
+ @Input() type: String="";
 
   ngOnInit(): void {
   }

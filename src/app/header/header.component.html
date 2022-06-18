@@ -1,4 +1,15 @@
-<div class="header-container">
-  <button (click)="btnClicked('animal')">ANIMALS</button>
-  <button (click)="btnClicked('fruit_veg')">FRUIT & VEG</button>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<div id="header" class="header-container">
+  <div (click)="btnClicked('animal')" class="header-container__div-icon">
+  <span class="material-symbols-outlined">
+    photo_library
+    </span>
+  </div>
+  <button class="glow-on-hover" (click)="btnClicked('animal')"
+  [ngClass]="type == 'animal' ? 'show' : ''"
+  [style.color]="type == 'animal' ? 'darkorchid' : 'dimgrey'">ANIMALS</button>
+  <button class="glow-on-hover" (click)="btnClicked('fruit_veg')"
+  [ngClass]="type == 'fruit_veg' ? 'show' : ''"
+  [style.color]="type == 'fruit_veg' ? 'darkorchid' : 'dimgrey'">FRUIT & VEG</button>
 </div>

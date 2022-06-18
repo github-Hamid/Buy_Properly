@@ -1,6 +1,7 @@
-<div [ngSwitch]="type">
+<div id="card" [ngSwitch]="type">
   <div class="card" *ngSwitchCase="'animal'" [attr.id]="animalItem.Id"
  (mouseleave)="hoveredFinished()" (mouseover)="hovered(animalItem.Id)"
+ (click)="cardClicked(animalItem.Id)"
  [style.background-image]="'url(' + animalItem.ImageURLs.FullSize + ')'">
   <div class="card__div-content">
     <p>{{animalItem.Title}}</p>
@@ -9,9 +10,12 @@
 </div>
 <div class="card" *ngSwitchCase="'fruit_veg'"  [attr.id]="fruit_vegItem.Id"
  (mouseleave)="hoveredFinished()" (mouseover)="hovered(fruit_vegItem.Id)"
+ (click)="cardClicked(fruit_vegItem.Id)"
  [style.background-image]="'url(' + fruit_vegItem.ImageURLs.FullSize + ')'">
   <div class="card__div-content">
     <p>{{fruit_vegItem.Title}}</p>
     <p>Family: {{fruit_vegItem.Family}}</p>
   </div>
 </div>
+
+

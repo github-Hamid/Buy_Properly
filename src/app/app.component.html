@@ -1,8 +1,28 @@
-<div class="app-container">
-  <app-header (buttonCilcked)="handleHeaderButton($event)"></app-header>
-  <div class="app-container__items">
+
+<div id="main_container" class="app-container">
+  <app-header (buttonCilcked)="handleHeaderButton($event)" [type]="type"></app-header>
+  <div id="body-container" class="app-container__body">
     <app-body [type]="type" [animals]="animals" [fruits_vegs]="fruits_vegs"></app-body>
   </div>
+
+  <div id="modal">
+    <div class="modal-container" *ngIf="object" >
+      <div class="modal-container__div" id="modal_div"
+      [style.background-image]="'url(' + object.ImageURLs.FullSize + ')'">
+       <div class="modal-container__div-content">
+         <p>{{object.Title}}</p>
+         <p>Family: {{object.Family}}</p>
+         <p [ngSwitch]="type">
+          <span *ngSwitchCase="'animal'">{{object.CollectiveNoun}}</span>
+          <span *ngSwitchCase="'fruit_veg'">{{object.Genus}}</span>
+         </p>
+         <p>{{object.Description}}</p>
+       </div>
+     </div>
+
+    </div>
+  </div>
 </div>
+
 
 
