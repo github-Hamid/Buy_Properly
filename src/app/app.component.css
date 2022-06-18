@@ -62,9 +62,10 @@ position: relative;
 
 
 .modal-container__div-content p {
-margin: 0 0 0 5%;
+margin: 2px 0 0 5%;
 
 }
+
 
 @keyframes animate {
   0% {
@@ -77,3 +78,33 @@ margin: 0 0 0 5%;
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 960px) and (min-width : 430px){
+.app-container__body{
+  width: 100%;
+}
+
+.modal-container{
+  width: 80%;
+  height: 90vh;
+  left: 10%;
+  top: 5vh;
+}
+}
+
+@media screen and (max-width: 430px)
+{
+  .app-container__body{
+    width: 90%;
+  }
+
+  .modal-container{
+    width: 90%;
+    height: 90vh;
+    left: 5%;
+    top: 5vh;
+  }
+
+
+}
+

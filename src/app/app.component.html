@@ -13,8 +13,8 @@
          <p>{{object.Title}}</p>
          <p>Family: {{object.Family}}</p>
          <p [ngSwitch]="type">
-          <span *ngSwitchCase="'animal'">{{object.CollectiveNoun}}</span>
-          <span *ngSwitchCase="'fruit_veg'">{{object.Genus}}</span>
+          <span *ngSwitchCase="'animal'">Collective Noun: {{object.CollectiveNoun}}</span>
+          <span *ngSwitchCase="'fruit_veg'">Genus: {{object.Genus}}</span>
          </p>
          <p>{{object.Description}}</p>
        </div>

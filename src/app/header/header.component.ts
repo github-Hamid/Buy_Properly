@@ -20,4 +20,16 @@ export class HeaderComponent implements OnInit {
     this.buttonCilcked.emit(name);
   }
 
+  menuIconClicked()
+  {
+    let sideMenu = document.getElementById("side_menu");
+    sideMenu?.style.setProperty("right" , "0")
+  }
+
+  navigateIconClicked()
+  {
+    let sideMenu = document.getElementById("side_menu");
+    sideMenu?.style.setProperty("right" , "-151px")
+  }
+
 }
