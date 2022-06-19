@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import {HttpClientModule} from "@angular/common/http";
 import { AnimalCardComponent } from './card/card.component';
+import { UiComponent } from './ui/ui.component';
+import { DataComponent } from './data/data.component';
 
 
 
@@ -16,8 +18,8 @@ import { AnimalCardComponent } from './card/card.component';
     HeaderComponent,
     BodyComponent,
     AnimalCardComponent,
-
-
+    UiComponent,
+    DataComponent,
   ],
   imports: [
     BrowserModule,
