@@ -1,46 +1,44 @@
-.header-container{
+.header-container {
   height: 60px;
   border-bottom: 1px solid black;
-display: flex;
-align-items: center;
-position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.header-container__div-icon{
+.header-container__div-icon {
   margin-left: 5%;
   cursor: pointer;
 }
 
-.header__div-menu{
+.header__div-menu {
   display: none;
   position: absolute;
   left: 90%;
-
 }
 
-.header__div-menu--open{
+.header__div-menu--open {
   position: fixed;
   height: 100%;
   z-index: 1;
   top: 0;
-   right: -151px;
+  right: -151px;
   width: 150px;
-display: flex;
-flex-direction: column;
-background-color: white;
-transition-duration: 1s;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition-duration: 1s;
 }
 
-.header__div-menu--open > button{
+.header__div-menu--open > button {
   margin-top: 70px;
 }
 
-
-.header__div-menu__icon{
+.header__div-menu__icon {
   height: 68px;
   border-bottom: 1px solid black;
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
 .header__div-menu__icon > div {
@@ -48,22 +46,22 @@ align-items: center;
   cursor: pointer;
 }
 
-button{
+button {
   border: none;
   background-color: white;
   margin-left: 15px;
   font-size: 1.2rem;
-cursor: pointer;
+  cursor: pointer;
 }
 
 button:after {
-  content: '';
+  content: "";
   display: block;
   margin: auto;
   height: 3px;
   width: 0px;
   background: transparent;
-  transition: width .5s ease, background-color .5s ease;
+  transition: width 0.5s ease, background-color 0.5s ease;
 }
 .show:after {
   width: 100%;
@@ -71,13 +69,11 @@ button:after {
 }
 
 @media screen and (max-width: 610px) {
-.header__div-buttons{
-  display: none;
-}
+  .header__div-buttons {
+    display: none;
+  }
 
-.header__div-menu{
-display: block;
-}
-
-
+  .header__div-menu {
+    display: block;
+  }
 }

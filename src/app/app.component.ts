@@ -1,9 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { DataManagerService } from './data-manager.service';
-import { Animal } from './animal';
-import { Fruit_Veg } from './fruit&veg';
+import { DataManagerService } from './core/services/data-manager.service';
+import { Animal } from './core/animal';
+import { Fruit_Veg } from './core/fruit&veg';
 import { Subscription } from 'rxjs';
-import { SendMessageService } from './send-message.service';
+import { SendMessageService } from './core/services/send-message.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

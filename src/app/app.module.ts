@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { BodyComponent } from './body/body.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BodyComponent } from './components/body/body.component';
 import {HttpClientModule} from "@angular/common/http";
-import { AnimalCardComponent } from './card/card.component';
-import { UiComponent } from './ui/ui.component';
-import { DataComponent } from './data/data.component';
+import { AnimalCardComponent } from './components/card/card.component';
+import { UiComponent } from './components/ui/ui.component';
+import { DataComponent } from './components/data/data.component';
 
 
 
