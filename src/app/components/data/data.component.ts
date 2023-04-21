@@ -1,3 +1,5 @@
+//IF you want to use any service inside a component you should inject it inside the constructor of the class component
+
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataManagerService } from '../../core/services/data-manager.service';
 import { Animal } from '../../core/animal';
